@@ -34,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Run npm test
-        run: npm run test:prod
+        run: npx ng test --browsers=ChromeHeadless --watch=false --code-coverage
       
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
