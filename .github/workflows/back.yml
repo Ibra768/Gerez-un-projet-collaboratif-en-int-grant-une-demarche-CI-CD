@@ -31,6 +31,12 @@ jobs:
         run: mvn -B clean test
         working-directory: ./back
 
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+            name: jacoco-report
+            path: back/target/site/jacoco
+
   # Job 2 : SonarCloud
   sonar:
     runs-on: ubuntu-latest
