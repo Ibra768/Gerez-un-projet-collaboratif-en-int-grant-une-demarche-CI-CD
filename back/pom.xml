@@ -17,6 +17,7 @@
 		<java.version>11</java.version>
 		<sonar.organization>ibra768</sonar.organization>
 		<sonar.projectKey>Ibra768_P10_Back</sonar.projectKey>
+		<sonar.projectName>Gerez-un-projet-collaboratif-en-integrant-une-demarche-CI-CD_BACK</sonar.projectName>
   		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
