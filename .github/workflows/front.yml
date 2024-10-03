@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - develop
-    paths:
-      - 'front/**'  # Se déclenche uniquement si des fichiers dans 'front' sont modifiés
+      #paths:
+      #- 'front/**'  # Se déclenche uniquement si des fichiers dans 'front' sont modifiés -- Ignoré pour les tests
   pull_request:
     branches:
       - main
