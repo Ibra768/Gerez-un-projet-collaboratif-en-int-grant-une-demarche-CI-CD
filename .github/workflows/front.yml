@@ -34,6 +34,12 @@ jobs:
         working-directory: front
         run: npx ng test --browsers=ChromeHeadless --watch=false --code-coverage
 
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+            name: coverage-report
+            path: front/coverage
+
   # Job 2 : SonarCloud
   sonar:
     runs-on: ubuntu-latest
